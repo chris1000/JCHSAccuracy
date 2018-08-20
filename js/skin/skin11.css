@@ -1,8 +1,4 @@
-:root {
-  --main-bg-color: #FF9800; 
-}
-
-.section-title h2 span,
+:root{--main-bg-color:#FF9800;}.section-title h2 span,
 .breadcrumbs .bread-list li:hover a,
 .breadcrumbs .bread-list li a i,
 .hero-area .slider-text .short,
@@ -23,13 +19,7 @@
 .testimonials .t-info h4 span,
 .contact-us .form-group .btn:hover,
 .section-title h2 span,
-.social .svg-inline--fa:hover, .navbar-light .navbar-nav .nav-link.active, .text-accent, .fa-calendar-alt {
-	color: var(--main-bg-color);
-}
-
-
-
-.section-title h2::before,
+.social .svg-inline--fa:hover, .navbar-light .navbar-nav .nav-link.active, .text-accent, .fa-calendar-alt{color:var(--main-bg-color);}.section-title h2::before,
 .section-title h2::after,
 .pagination li:hover a,
 .hero-area .slider-text .btn.icon,
@@ -72,24 +62,8 @@
 .nav-pills .show>.nav-link, .float, .float,
 .btn-accent, .navbar-toggler, .btn-success:hover,
 .blogs .owl-dots .owl-dot:hover span::before,
-.blogs .owl-dots .owl-dot.active span::before {
-	background: var(--main-bg-color);
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link, .float, .float, .youtube .play-button {
-	background-color: var(--main-bg-color);
-}
-
-.about-us .tab-main .nav-tabs {
-	border-bottom-color: var(--main-bg-color);
-}
-
-.about-us .nav-tabs .nav-link::before {
-	border-top-color: var(--main-bg-color);
-}
-
-.hero-area .owl-dots .owl-dot span::before,
+.blogs .owl-dots .owl-dot.active span::before{background:var(--main-bg-color);}.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link, .float, .float, .youtube .play-button{background-color:var(--main-bg-color);}.about-us .tab-main .nav-tabs{border-bottom-color:var(--main-bg-color);}.about-us .nav-tabs .nav-link::before{border-top-color:var(--main-bg-color);}.hero-area .owl-dots .owl-dot span::before,
 .services .owl-dots .owl-dot span::before,
 .why-choose .single-choose i
 .portfolio.single .owl-dots .owl-dot span::before,
@@ -98,6 +72,4 @@
 .consulting .nice-select::after,
 .testimonials .owl-dots .owl-dot span::before,
 .our-skill .progress-bar span::before,
-.timeline .image:hover img {
-	border-color: var(--main-bg-color);
-}
+.timeline .image:hover img{border-color:var(--main-bg-color);}
