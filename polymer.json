@@ -1,0 +1,25 @@
+{
+  "sources": [
+   "css/**/*",
+   "js/**/*",
+   "webfonts/**/*"
+  ],
+  "extraDependencies": [
+    "index.html",
+    "404.html",
+    "blog.html",
+    "images/**/*",
+    "about.html",
+    "contact.html",
+    "mail-success.html",
+    "sitemap.xml"
+    ],
+  "builds": [
+    { 
+      "name": "production",
+      "js": {"minify": true},
+      "css": {"minify": true},
+      "html": {"minify": true}
+    }
+  ]
+}

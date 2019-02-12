@@ -1,0 +1,1 @@
+cls && polymer build && firebase deploy

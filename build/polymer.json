@@ -1,0 +1,36 @@
+{
+  "entrypoint": "index.html",
+  "fragments": [],
+  "sources": [
+    "css/**/*",
+    "js/**/*",
+    "webfonts/**/*",
+    "index.html"
+  ],
+  "extraDependencies": [
+    "bower_components/webcomponentsjs/*.js",
+    "index.html",
+    "404.html",
+    "blog.html",
+    "images/**/*",
+    "about.html",
+    "contact.html",
+    "mail-success.html",
+    "sitemap.xml"
+  ],
+  "builds": [
+    {
+      "name": "production",
+      "js": {
+        "minify": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      }
+    }
+  ],
+  "moduleResolution": "node"
+}
