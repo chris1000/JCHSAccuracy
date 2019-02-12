@@ -22,7 +22,7 @@ function getSize() {
   $( "#up" ).on( "click", function() {
   
     // parse font size, if less than 50 increase font size
-    if ((size + 2) <= 120) {
+    if ((size + 2) <= 22) {
       $( "p" ).css( "font-size", "+=2" );
       $( "#font-size" ).text(  size += 2 );
     }
