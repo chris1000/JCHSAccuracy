@@ -1,12 +1,51 @@
 {
   "hosting": {
+
     "public": "build/production",
-  "cleanUrls": true,
+
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
-    
+    ],
+
+    "headers": [ {
+      "source": "**/*.@(eot|otf|ttf|ttc|woff|woff2)",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "max-age=31536000"
+      } ]
+    },
+     {
+      "source": "**/*.@(jpg|jpeg|gif|png|svg)",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "max-age=31536000"
+      } ]
+    },
+     {
+      "source": "**/*.html",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "max-age=0, no-cache"
+      } ]
+    }
+    ,
+     {
+      "source": "**/*.@(css|js)",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "max-age=31536000"
+      } ]
+    },  {
+      "source": "404.html",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "max-age=31536000"
+      } ]
+    } ],
+
+    "cleanUrls": true
+
   }
 }

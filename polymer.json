@@ -2,7 +2,8 @@
   "sources": [
    "css/**/*",
    "js/**/*",
-   "webfonts/**/*"
+   "webfonts/**/*",
+   "blog/**/*"
   ],
   "extraDependencies": [
     "index.html",

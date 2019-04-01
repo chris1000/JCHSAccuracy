@@ -5,6 +5,7 @@
     "css/**/*",
     "js/**/*",
     "webfonts/**/*",
+    "blog/**/*",
     "index.html"
   ],
   "extraDependencies": [

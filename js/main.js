@@ -1,3 +1,5 @@
+
+
 $('a.smooth-scroll').on('click', function(event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
@@ -5,51 +7,83 @@ $('a.smooth-scroll').on('click', function(event) {
     }, 1500, 'easeInOutExpo');
     event.preventDefault();
 });
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
+(function() {
+
+  // get's all video wrapper divs
+  var youtube = document.querySelectorAll(".youtube");
+
+  // iterates through all the divs
+  for (var i = 0; i < youtube.length; i++) {
+
+
+    youtube[i].addEventListener("click", function() {
+
+      var iframe = document.createElement("iframe");
+
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("allowfullscreen", "");
+      iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+
+      this.innerHTML = "";
+      this.appendChild(iframe);
+    });
+  };
+
+})();
+
+
+
+$(".single-faq").click(function () {
+			$(".single-faq.active").removeClass("active");
+
+			$(this).addClass("active");
+		});
+
+  $(document).ready(function(){
+  var resize = new Array('p','.resizable');
+  resize = resize.join(',');
+  
+  //resets the font size when "reset" is clicked
+  var resetFont = $(resize).css('font-size');
+    $("#reset").click(function(){
+      $(resize).css('font-size', resetFont);
+    });
+  
+  //increases font size when "+" is clicked
+  $("#increase").click(function(){
+    var originalFontSize = $(resize).css('font-size');
+    var originalFontNumber = parseFloat(originalFontSize, 10);
+    var newFontSize = originalFontNumber*1.1;
+    $(resize).css('font-size', newFontSize);
+    return false;
+  });
+  
+  //decrease font size when "-" is clicked
+  
+  $("#decrease").click(function(){
+    var originalFontSize = $(resize).css('font-size');
+    var originalFontNumber = parseFloat(originalFontSize, 10);
+    var newFontSize = originalFontNumber*0.8;
+    $(resize).css('font-size', newFontSize);
+    return false;
+  });
+  
 });
 
-//Size Scaling
-function getSize() {
-    size = $( "p" ).css( "font-size" );
-    size = parseInt(size, 10);
-    $( "#font-size" ).text(  size  );
-  }
-  
-  //get inital font size
-  getSize();
-  
-  $( "#up" ).on( "click", function() {
-  
-    // parse font size, if less than 50 increase font size
-    if ((size + 2) <= 22) {
-      $( "p" ).css( "font-size", "+=2" );
-      $( "#font-size" ).text(  size += 2 );
-    }
-  });
-  
-  $( "#down" ).on( "click", function() {
-    if ((size - 2) >= 12) {
-      $( "p" ).css( "font-size", "-=2" );
-      $( "#font-size" ).text(  size -= 2  );
-    }
-  });
+  var doubleTouchStartTimestamp = 0;
+$(document).bind("touchstart", function(event){
+    var now = +(new Date());
+    if (doubleTouchStartTimestamp + 1000 > now){
+        event.preventDefault();
+    };
+    doubleTouchStartTimestamp = now;
+});
 
 (function($) {
     "use strict";
      $(document).on('ready', function() {
 	
 		
-		/*====================================
-		03. Sticky Header JS
-		======================================*/ 
-		jQuery(window).on('scroll', function() {
-			if ($(this).scrollTop() > 100) {
-				$('.header').addClass("sticky");
-			} else {
-				$('.header').removeClass("sticky");
-			}
-		});
 		
 		/*====================================
 		04. Home Slider JS
@@ -64,7 +98,6 @@ function getSize() {
 			nav:true,
 			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 			dots:true,
-			lazyload: true,
 			loop:true,
 			responsive:{
 				300: {
@@ -147,31 +180,17 @@ function getSize() {
 		$('.blog-slider').owlCarousel({
 			items:1,
 			autoplay:true,
-			autoplayTimeout:3000,
-			smartSpeed:500,
-			margin:0,
 			autoplayHoverPause:true,
-			loop:true,
-			nav:false,
+			autoplayTimeout:4000,
+			smartSpeed:600,
+			merge:true,
 			dots:true,
-		});	
+			loop:true,
+			
+		});
 		
 		
-		/*===============================
-		17. Text Rotating JS
-		=================================*/ 
-		$("#text-rotating").Morphext({
-			// The [in] animation type. Refer to Animate.css for a list of available animations.
-			animation: "flipInX",
-			// An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
-			separator: ",",
-			// The delay between the changing of each phrase in milliseconds.
-			speed: 2500,
-			complete: function () {
-				// Called after the entrance animation is executed.
-			}
-		});		
-
+		
 	});
 	
 })(jQuery);
