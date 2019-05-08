@@ -7,9 +7,11 @@ Publically Available Link: https://jchsaccuracy.firebaseapp.com/
 <h2>Note</h2> JCHS Accuracy makes use of Javascript and Browser Cookies to enhance/ provide the functionality of certian features such as our Accessibilities Tool Menu (Font Scaling Tool, Translations, Color Switcher) and Cookie Concent Form (To make sure it is only displayed once).To improve overall website loading times we have minified (https://www.imperva.com/learn/performance/minification/) our code using the Google Polymer CLI toolkit (https://polymer-library.polymer-project.org/3.0/docs/tools/polymer-cli) but have kept the code hosted here unminified (to view minified code enter into the "~/build/production" directory of this repository. To view our polymer configuration view the "polymer.json" file in the main directory.
 
 <h2>Sitemap</h2>
-Home Page: https://jchsaccuracy.firebaseapp.com/
-About Us: https://jchsaccuracy.firebaseapp.com/about
-Contact Us: https://jchsaccuracy.firebaseapp.com/contact
-Copyright Information: https://jchsaccuracy.firebaseapp.com/copyright-attribution
-Sitemap: https://jchsaccuracy.firebaseapp.com/sitemap
-Terms of Service: https://jchsaccuracy.firebaseapp.com/terms-of-service
+<ul>
+  <li>Home Page: https://jchsaccuracy.firebaseapp.com/</li>
+  <li>About Us: https://jchsaccuracy.firebaseapp.com/about</li>
+<li>Contact Us: https://jchsaccuracy.firebaseapp.com/contact</li>
+<li>Copyright Information: https://jchsaccuracy.firebaseapp.com/copyright-attribution</li>
+<li>Sitemap: https://jchsaccuracy.firebaseapp.com/sitemap</li>
+<li>Terms of Service: https://jchsaccuracy.firebaseapp.com/terms-of-service</li>
+ </ul>
