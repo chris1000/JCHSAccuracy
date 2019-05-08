@@ -1,1 +1,5 @@
+Johns Creek High School FBLA submission for Website Design 2018 - 2019
 
+JCHS Accuracy was designed with the latest in HTML, CSS and Javascript technologies. This allowed us to add advanced Progressive Web App (https://developers.google.com/web/progressive-web-apps/) functionality to the website. JCHS Accuracy is hosted with Googles Firebase (https://firebase.google.com/) platform and takes advantage of their advanced caching features to provide offline browsing functionality (to an extent). JCHS Accuracy also leverages Google CDN (https://cloud.google.com/cdn/) to provide fast low-latency content delievery. 
+
+Note: To improve overall website loading times we have minified (https://www.imperva.com/learn/performance/minification/) our code using the Google Polymer CLI toolkit (https://polymer-library.polymer-project.org/3.0/docs/tools/polymer-cli) but have kept the code hosted here unminified (to view minified code enter into the /build directory of this repository. To view our polymer configuration view the "polymer.json" file in the main directory.
