@@ -8,7 +8,7 @@ Publically Available Link: https://jchsaccuracy.firebaseapp.com/
 
 <h2>Sitemap</h2>
 <ul>
-  <li>Home Page: https://jchsaccuracy.firebaseapp.com/</li>
+  <li>Home Page: <a href="https://jchsaccuracy.firebaseapp.com" target="_blank">https://jchsaccuracy.firebaseapp.com/</a></li>
   <li>About Us: https://jchsaccuracy.firebaseapp.com/about</li>
 <li>Contact Us: https://jchsaccuracy.firebaseapp.com/contact</li>
 <li>Copyright Information: https://jchsaccuracy.firebaseapp.com/copyright-attribution</li>
