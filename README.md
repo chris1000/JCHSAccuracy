@@ -8,4 +8,4 @@ Build: To build/ test code clone this project and install the Polymer CLI (https
 
 Publically Available Link: https://jchsaccuracy.firebaseapp.com/
 
-Note: JCHS Accuracy makes use of Javascript and Browser Cookies to enhance/ provide the functionality to features if you have either of these functionalities disabled please be sure to enable them.
+Note: JCHS Accuracy makes use of Javascript and Browser Cookies to enhance/ provide the functionality of certian features such as our Accessibilities Tool Menu (Font Scaling Tool, Translations, Color Switcher) and Cookie Concent Form (To make sure it is only displayed once).
