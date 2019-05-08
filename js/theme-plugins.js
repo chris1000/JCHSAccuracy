@@ -327,4 +327,28 @@ jQuery(document).ready(function ($) {
     }
 });
 
+ var doubleTouchStartTimestamp = 0;
+$(document).bind("touchstart", function(event){
+    var now = +(new Date());
+    if (doubleTouchStartTimestamp + 1000 > now){
+        event.preventDefault();
+    };
+    doubleTouchStartTimestamp = now;
+});
 
+$('a.smooth-scroll').on('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top + 1
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+});
+$('.navbar-nav>li>a').on('click', function () {
+			$('.navbar-collapse').collapse('hide');
+		});
+jQuery('#datetimepicker').datetimepicker({
+			format: 'm/d/Y g:ia',
+			formatTime: 'g:ia',
+			validateOnBlur: false,
+			scrollinput: true,
+		});

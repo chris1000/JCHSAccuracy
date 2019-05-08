@@ -1,19 +1,25 @@
 {
   "sources": [
    "css/**/*",
-   "js/**/*",
-   "webfonts/**/*",
-   "blog/**/*"
+   "js/**/*"
   ],
   "extraDependencies": [
     "index.html",
     "404.html",
-    "blog.html",
     "images/**/*",
     "about.html",
     "contact.html",
     "mail-success.html",
-    "sitemap.xml"
+    "sitemap.xml",
+    "copyright-attribution.html",
+    "sitemap.html",
+    "terms-of-service.html",
+    "successfully-subscribed.html",
+    "sales-inquiry.html",
+    "appointment-scheduled.html",
+    "widget.html",
+    "manifest.json",
+    "sw.js"
     ],
   "builds": [
     { 
