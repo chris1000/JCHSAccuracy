@@ -654,6 +654,15 @@ a:active {
 	background-size: auto 100%;
 }
 
+.font-size-15 {
+font-size: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .font-size-15 {
+font-size: 12px;
+  }
+}
 .ath-ios12 .ath-action-icon
 {
 	width: 1.6em;
