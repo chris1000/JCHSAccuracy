@@ -38,7 +38,7 @@
 'use strict';
 
 var precacheConfig = [["style.css"]];[["js/jquery.min.js"]];[["js/bootstrap.min.js"]];[["css/bootstrap.min.css"]];[["js/all.min.js"]];[["js/accessibilitytools.js"]];[["js/theme-plugins.js"]];
-var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
+var cacheName = 'sw-precache-v4--' + (self.registration ? self.registration.scope : '');
 
 
 var ignoreUrlParametersMatching = [/^utm_/];
