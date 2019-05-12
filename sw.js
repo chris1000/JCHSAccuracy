@@ -57,7 +57,7 @@ var precacheConfig = [
    ["js/theme-plugins.js"]
 ];
 //Cache version control (when value increases cache is cleared and refreshed//
-var cacheName = "sw-precache-v5--" + (self.registration ? self.registration.scope : ""),
+var cacheName = "sw-precache-v6--" + (self.registration ? self.registration.scope : ""),
    ignoreUrlParametersMatching = [/^utm_/],
    addDirectoryIndex = function (originalUrl, index) {
       var url = new URL(originalUrl);
